@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brunch — Have a Nice Meal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🥞</text></svg>">
+    <meta name="description" content="Best meal brunch in NYC. Menu, store info, company profile, contact and map." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="logo" aria-label="Brunch home">
+          <span class="logo-top">BR</span><span class="logo-bottom">UNCH</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav" id="site-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#shop">Store</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#contact" class="btn btn-primary header-cta">Book a Table</a>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- Hero -->
+      <section class="section hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Brunch</p>
+            <h1>Have a <br /><span>Nice Meal</span></h1>
+            <p class="lead">
+              Delicious brunches made with seasonal ingredients. Fresh coffee, warm bread, and a bright mood — every day.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#menu">See Menu</a>
+              <a class="btn btn-outline" href="#contact">Book a Table</a>
+            </div>
+            <div class="hero-badges">
+              <div class="badge">
+                <img loading="lazy" decoding="async" width="72" height="72" src="images/badge-cake.jpg" alt="Slice cake" />
+                <span>Slice cake</span>
+              </div>
+              <div class="badge">
+                <img loading="lazy" decoding="async" width="72" height="72" src="images/badge-black-coffee.jpg" alt="Black coffee" />
+                <span>Black coffee</span>
+              </div>
+              <div class="badge">
+                <img loading="lazy" decoding="async" width="72" height="72" src="images/badge-strawberry-oat.jpg" alt="Strawberry oat" />
+                <span>Strawberry oat</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-art">
+            <img class="plate main" width="320" height="320" src="images/hero-main.jpg" alt="Breakfast plate" />
+            <img class="plate sub one" loading="lazy" decoding="async" width="140" height="140" src="images/hero-cupcakes.jpg" alt="cupcakes" />
+            <img class="plate sub two" loading="lazy" decoding="async" width="140" height="140" src="images/hero-oats.jpg" alt="Oatmeal" />
+            <img class="plate sub three" loading="lazy" decoding="async" width="140" height="140" src="images/menu-americano.jpg" alt="Coffee cup" />
+            <span class="shape shape-teal"></span>
+            <span class="shape shape-yellow"></span>
+            <span class="shape shape-orange"></span>
+          </div>
+        </div>
+      </section>
+
+      
+
+      
+
+      <!-- Best Meal -->
+      <section id="about" class="section split">
+        <div class="container split-grid">
+          <div class="split-media">
+            <img loading="lazy" decoding="async" src="images/about-hands-bowl.jpg" alt="Hands holding bowl" />
+          </div>
+          <div class="split-copy">
+            <h2>Best Meal<br />Brunch in NYC</h2>
+            <p>
+              From classic pancakes to vibrant grain bowls, our kitchen celebrates local farmers and slow-food craft. Grab a seat, sip something warm, and let us cook you something wonderful.
+            </p>
+            <p>
+              Weekdays 7am–3pm, Weekends 8am–4pm. Walk-ins welcome. Reservations recommended for groups.
+            </p>
+            <a class="link-more" href="#menu">Read More →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section id="menu" class="section menu">
+        <div class="container">
+          <h3 class="section-title">Menu</h3>
+          <p class="section-subtitle">Simple, super-tasty brunch favorites crafted with care.</p>
+
+          <div class="menu-toolbar">
+            <div class="chips" role="tablist" aria-label="Filter menu">
+              <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+              <button class="chip" data-filter="coffee" role="tab" aria-selected="false">Coffee</button>
+              <button class="chip" data-filter="bowls" role="tab" aria-selected="false">Bowls</button>
+              <button class="chip" data-filter="toasts" role="tab" aria-selected="false">Toasts</button>
+              <button class="chip" data-filter="desserts" role="tab" aria-selected="false">Desserts</button>
+            </div>
+            <div class="carousel-buttons">
+              <button class="carousel-btn prev" aria-label="Scroll left">‹</button>
+              <button class="carousel-btn next" aria-label="Scroll right">›</button>
+            </div>
+          </div>
+
+          <div class="menu-carousel" id="menuCarousel" aria-label="Scrollable menu">
+            <div class="menu-track">
+              <article class="card menu-card" data-category="coffee">
+                <img loading="lazy" decoding="async" src="images/menu-americano.jpg" alt="Americano (black coffee)" />
+                <div class="card-body">
+                  <h4>Americano</h4>
+                  <p>Rich espresso mellowed with hot water.</p>
+                  <a class="btn btn-small" href="#">Order</a>
+                </div>
+              </article>
+              <article class="card menu-card" data-category="coffee">
+                <img loading="lazy" decoding="async" src="images/menu-long-black.jpg" alt="Long Black (black coffee)" />
+                <div class="card-body">
+                  <h4>Long Black</h4>
+                  <p>Silky crema over a robust finish.</p>
+                  <a class="btn btn-small" href="#">Order</a>
+                </div>
+              </article>
+              <article class="card menu-card" data-category="coffee">
+                <img loading="lazy" decoding="async" src="images/menu-cappuccino.jpg" alt="Cappuccino with milk foam" />
+                <div class="card-body">
+                  <h4>Cappuccino</h4>
+                  <p>Velvety milk foam with bold espresso.</p>
+                  <a class="btn btn-small" href="#">Order</a>
+                </div>
+              </article>
+              <article class="card menu-card" data-category="coffee">
+                <img loading="lazy" decoding="async" src="images/menu-latte.jpg" alt="Latte with latte art" />
+                <div class="card-body">
+                  <h4>Latte</h4>
+                  <p>Silky steamed milk with espresso.</p>
+                  <a class="btn btn-small" href="#">Order</a>
+                </div>
+              </article>
+              <article class="card menu-card" data-category="bowls">
+                <img loading="lazy" decoding="async" src="images/menu-granola.jpg" alt="Granola Bowl" />
+                <div class="card-body">
+                  <h4>Granola Bowl</h4>
+                  <p>Greek yogurt, fruit, and toasted oats.</p>
+                  <a class="btn btn-small" href="#">Order</a>
+                </div>
+              </article>
+              <article class="card menu-card" data-category="bowls">
+                <img loading="lazy" decoding="async" src="images/menu-acai.jpg" alt="Acai Bowl" />
+                <div class="card-body">
+                  <h4>Acai Bowl</h4>
+                  <p>Super berries, banana, and crunchy granola.</p>
+                  <a class="btn btn-small" href="#">Order</a>
+                </div>
+              </article>
+              <article class="card menu-card" data-category="toasts">
+                <img loading="lazy" decoding="async" src="images/menu-avocado-toast.jpg" alt="Avocado Toast" />
+                <div class="card-body">
+                  <h4>Avocado Toast</h4>
+                  <p>Sourdough, smashed avo, chili flakes.</p>
+                  <a class="btn btn-small" href="#">Order</a>
+                </div>
+              </article>
+              <article class="card menu-card" data-category="toasts">
+                <img loading="lazy" decoding="async" src="images/menu-garlic-toast.jpeg" alt="Garlic Toast" />
+                <div class="card-body">
+                  <h4>Garlic Toast</h4>
+                  <p>Sourdough, garlic, and parmesan.</p>
+                  <a class="btn btn-small" href="#">Order</a>
+                </div>
+              </article>
+              <article class="card menu-card" data-category="desserts">
+                <img loading="lazy" decoding="async" src="images/menu-pancakes.jpg" alt="Blueberry Pancakes" />
+                <div class="card-body">
+                  <h4>Blueberry Pancakes</h4>
+                  <p>Stack with butter and maple syrup.</p>
+                  <a class="btn btn-small" href="#">Order</a>
+                </div>
+              </article>
+              <article class="card menu-card" data-category="desserts">
+                <img loading="lazy" decoding="async" src="images/hero-cupcakes.jpg" alt="Cupcakes" />
+                <div class="card-body">
+                  <h4>Cupcakes</h4>
+                  <p>Chocolate, vanilla, and strawberry.</p>
+                  <a class="btn btn-small" href="#">Order</a>
+                </div>
+              </article>
+              <article class="card menu-card" data-category="desserts">
+                <img loading="lazy" decoding="async" src="images/badge-cake.jpg" alt="Cake" />
+                <div class="card-body">
+                  <h4>Slice Cake</h4>
+                  <p>Chocolate, vanilla, and strawberry.</p>
+                  <a class="btn btn-small" href="#">Order</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Store -->
+      <section id="shop" class="section store">
+        <div class="container">
+          <h3 class="section-title">Store</h3>
+          <p class="section-subtitle">Fresh-roasted beans, merch, and gift cards available in house.</p>
+          <div class="store-grid">
+            <article class="store-card">
+              <img loading="lazy" decoding="async" src="images/store-coffee.jpg" alt="Coffee" />
+              <div class="store-card-body">
+                <span class="tag">Coffeeshop</span>
+                <p>Signature blends roasted weekly.</p>
+                <a class="btn btn-small" href="#">Shop Now</a>
+              </div>
+            </article>
+            <article class="store-card">
+              <img loading="lazy" decoding="async" src="images/store-workshop.jpg" alt="Workshop" />
+              <div class="store-card-body">
+                <span class="tag">Workshop</span>
+                <p>Latte art and brewing classes.</p>
+                <a class="btn btn-small" href="#">Join</a>
+              </div>
+            </article>
+            <article class="store-card">
+              <img loading="lazy" decoding="async" src="images/store-restaurant.jpg" alt="Restaurant" />
+              <div class="store-card-body">
+                <span class="tag">Restaurant</span>
+                <p>Private dining and events.</p>
+                <a class="btn btn-small" href="#">Book</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Company Profile + Video -->
+      <section id="profile" class="section profile">
+        <div class="container profile-grid">
+          <div class="video-card">
+            <div class="video-frame">
+              <img loading="lazy" decoding="async" src="images/profile-video-cover.jpg" alt="Tasty pizza video cover" />
+              <button class="play" aria-label="Play video">▶</button>
+            </div>
+          </div>
+          <div class="company-copy">
+            <h3>Company Profile</h3>
+            <p>
+              Local, independent, and proudly community-driven. We partner with neighborhood makers and donate a portion of proceeds to food access programs in NYC.
+            </p>
+            <div class="socials">
+              <a href="#" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="youtube"><i class="fab fa-youtube"></i></a>
+            </div>            
+          </div>
+        </div>
+      </section>
+
+      <!-- Map + Contact -->
+      <section id="contact" class="section contact">
+        <div class="container contact-grid">
+          <div class="map">
+            <iframe title="NYC map" src="https://www.google.com/maps?q=New%20York%20City&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="contact-form">
+            <h3>Contact Us</h3>
+            <form name="contact" netlify>
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your visit…"></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo small"><span class="logo-top">BR</span><span class="logo-bottom">UNCH</span></a>
+          <p>Your Company<br />123 Mulberry St, New York, NY</p>
+          <p>Mon–Fri 7:00–15:00 · Sat–Sun 8:00–16:00</p>
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#menu">Coffee</a></li>
+            <li><a href="#menu">Bowls</a></li>
+            <li><a href="#menu">Pastries</a></li>
+            <li><a href="#shop">Beans</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#shop">Store</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <form class="newsletter">
+            <input type="email" placeholder="Email address" />
+            <button class="btn btn-small">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-note">© <span id="year"></span> Brunch. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
